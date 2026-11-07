@@ -1,0 +1,111 @@
+{
+  "name": "@deepseek-ai/dsh-workbench-assistant",
+  "description": "Same-session questions and review-only edits for selected editor text",
+  "version": "0.12.0",
+  "private": true,
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE-MIXED.md",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./private-runtime": {
+      "types": "./src/private-runtime-api.d.ts",
+      "default": "./lib/private-runtime.js"
+    },
+    "./types": {
+      "types": "./lib/types/types.d.ts",
+      "default": "./lib/types/types.js"
+    },
+    "./typert": {
+      "types": "./lib/typert.host.d.ts",
+      "default": "./lib/typert.host.js"
+    },
+    "./remote": {
+      "types": "./lib/typert.remote-client.d.ts",
+      "default": "./lib/typert.remote-client.js"
+    },
+    "./src/*": "./src/*",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "bundle": "tsdown",
+    "watch": "tsdown --watch"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-tool-executor-native": "workspace:*",
+    "@deepseek-ai/dsh-brand": "workspace:*",
+    "@deepseek-ai/dsh-llm": "workspace:*",
+    "@deepseek-ai/dsh-typert-protocol": "workspace:*",
+    "@deepseek-ai/schemastery": "workspace:~",
+    "zod": "4.4.3",
+    "@deepseek-ai/dsh-storage-domain": "workspace:*"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:~"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "workspace:~",
+    "@deepseek-ai/dsh-agent": "workspace:*",
+    "@deepseek-ai/dsh-agent-loop-testkit": "workspace:*",
+    "@deepseek-ai/dsh-ptc-runtime": "workspace:*",
+    "@deepseek-ai/dsh-api-session-controller": "workspace:*",
+    "@deepseek-ai/dsh-app-boot": "workspace:*",
+    "@deepseek-ai/dsh-loader-smoke": "workspace:*",
+    "@deepseek-ai/dsh-session": "workspace:*",
+    "@deepseek-ai/dsh-scope": "workspace:*",
+    "@deepseek-ai/dsh-system-prompt": "workspace:*",
+    "@deepseek-ai/dsh-tools": "workspace:*",
+    "@deepseek-ai/dsh-tool-executor-ptc": "workspace:*",
+    "@deepseek-ai/dsh-util-values": "workspace:*",
+    "@deepseek-ai/dsh-attachment": "workspace:*",
+    "@deepseek-ai/dsh-session-projection": "workspace:*",
+    "@deepseek-ai/dsh-session-query": "workspace:*",
+    "@deepseek-ai/dsh-workbench-workspace": "workspace:*",
+    "@deepseek-ai/dsh-workbench-word": "workspace:*",
+    "@deepseek-ai/dsh-commands": "workspace:*"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/private-runtime.js",
+    "src/private-runtime-api.d.ts",
+    "src/types.ts",
+    "src/quick-contract.ts",
+    "src/quick-dialogue.ts",
+    "src/conversation.ts",
+    "src/conversation-context.ts",
+    "src/conversation-assets.ts",
+    "src/prompt.ts",
+    "src/proposal.ts",
+    "src/recovery.ts",
+    "src/word-command.ts",
+    "src/word-format.ts",
+    "src/word-page.ts",
+    "lib/types/index.d.ts",
+    "lib/types/types.d.ts",
+    "lib/types/types.js",
+    "lib/types/quick-contract.d.ts",
+    "lib/types/quick-dialogue.d.ts",
+    "lib/types/conversation.d.ts",
+    "lib/types/conversation-assets.d.ts",
+    "lib/types/conversation-context.d.ts",
+    "lib/types/prompt.d.ts",
+    "lib/types/proposal.d.ts",
+    "lib/types/recovery.d.ts",
+    "lib/types/word-command.d.ts",
+    "lib/types/word-format.d.ts",
+    "lib/types/word-page.d.ts",
+    "LICENSE-MIXED.md",
+    "LICENSE-MYRESEARCHWORKBENCH-NC.md",
+    "lib/typert.host.js",
+    "lib/typert.host.d.ts",
+    "lib/typert.remote-client.js",
+    "lib/typert.remote-client.d.ts",
+    "assets/workbench-runtime.json",
+    "assets/NOTICE.txt",
+    "assets/manifest.json"
+  ]
+}

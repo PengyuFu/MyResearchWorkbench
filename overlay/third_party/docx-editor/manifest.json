@@ -1,0 +1,16 @@
+{
+  "upstream": "https://github.com/eigenpal/docx-editor",
+  "commit": "3cc7bf5d38510940d6e88ffcec4ecff82fd6333e",
+  "version": "2.33.0",
+  "license": "Apache-2.0",
+  "artifact": "docx-editor-core-2.33.0-mrw.5.tgz",
+  "sha256": "ed3568c0cc94acd313b744a1de7a941738fd34c65f297c8136483c4db3940dd8",
+  "source": "patched-source-3cc7bf5-mrw5.tar.gz",
+  "productVersion": "0.10.4",
+  "pro": false,
+  "buildVersion": "2.33.0-mrw.5",
+  "harfbuzzJs": "1.6.1",
+  "harfbuzzExplicitInitialization": true,
+  "sourceSha256": "e8e54c6e7ef1bfbed7075e787eedf4b4442107cbcabcdbfac0257b24732e48cf",
+  "sourceFileCount": 3858
+}

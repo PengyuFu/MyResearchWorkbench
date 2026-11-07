@@ -1,0 +1,5 @@
+/* The header entry occupies the same compact slot as other utilities. */
+.seat {
+  display: inline-flex;
+  align-items: center;
+}

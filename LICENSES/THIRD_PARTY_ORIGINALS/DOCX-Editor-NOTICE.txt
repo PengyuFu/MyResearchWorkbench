@@ -1,0 +1,6 @@
+DOCX Editor core, eigenpal/docx-editor 2.33.0, Apache-2.0.
+Upstream commit: 3cc7bf5d38510940d6e88ffcec4ecff82fd6333e.
+Modified by MyResearchWorkbench: continuous page presentation, Word-compatible layout and CJK fixes, HarfBuzz initialization, table AutoFit and row-height commands, and Windows CSS build globs.
+Build: 2.33.0-mrw.5. No commercial Pro or Editor API modules included.
+Source changes are recorded in the complete mrw.5 text patch relative to the pinned EigenPal commit.
+See the accompanying LICENSE and licenses for bundled components.

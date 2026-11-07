@@ -1,0 +1,69 @@
+{
+  "extends": "../../../tsconfig.base.client.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib/types"
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "../../../vendor/cordis"
+    },
+    {
+      "path": "../../api/remotes/tsconfig.client.json"
+    },
+    {
+      "path": "../locale/tsconfig.client.json"
+    },
+    {
+      "path": "../store"
+    },
+    {
+      "path": "../ui-conversation/tsconfig.client.json"
+    },
+    {
+      "path": "../ui-primitives"
+    },
+    {
+      "path": "../ui-slots"
+    },
+    {
+      "path": "../ui-renderer"
+    },
+    {
+      "path": "../../core/session"
+    },
+    {
+      "path": "../../util/crypto"
+    },
+    {
+      "path": "../../workspace/workbench-workspace"
+    },
+    {
+      "path": "../../context/workbench-assistant"
+    },
+    {
+      "path": "../ui-sidebar-documentpreview/tsconfig.client.json"
+    },
+    {
+      "path": "../ui-sidebar-terminal"
+    },
+    {
+      "path": "../ui-sidebar-right"
+    },
+    {
+      "path": "../../util/workspace-path"
+    },
+    {
+      "path": "../../api/session-controller/tsconfig.client.json"
+    },
+    {
+      "path": "../../workspace/workbench-word"
+    },
+    {
+      "path": "../ui-chat/tsconfig.client.json"
+    }
+  ]
+}

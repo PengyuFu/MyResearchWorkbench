@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": "src", "outDir": "lib/types" },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../../../vendor/cordis" },
+    { "path": "../../../vendor/schemastery" },
+    { "path": "../../api/workspace-files/tsconfig.host.json" },
+    { "path": "../../fs/fs" },
+    { "path": "../../subprocess/subprocess" },
+    { "path": "../../typert/protocol" },
+    { "path": "../../util/brand" }
+  ]
+}

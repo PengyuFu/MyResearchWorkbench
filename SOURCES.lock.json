@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "source-visible-overlay-binary-not-released",
+  "applicationPackageVersion": "0.12.0",
+  "harness": {
+    "name": "DeepSeek Harness",
+    "repository": "https://github.com/deepseek-ai/deepseek-harness.git",
+    "tag": "dsh-v0.2.2-rc.1",
+    "commit": "66491b05e3f05ad35bcdd4f6cd7ed26041d9e3db",
+    "tree": "3aeac580e803b0ce82f867b1374ed494a59662c2",
+    "license": "MIT"
+  },
+  "toolchain": {
+    "platform": "win32",
+    "arch": "x64",
+    "nodeRecommended": "24.21.0",
+    "nodeMinimum": "24.9.0",
+    "pnpm": "11.28.5",
+    "electron": "44.7.0",
+    "python": "3.12.14"
+  },
+  "docx": {
+    "repository": "https://github.com/eigenpal/docx-editor",
+    "commit": "3cc7bf5d38510940d6e88ffcec4ecff82fd6333e",
+    "component": "@docx-editor.dev/core",
+    "upstreamVersion": "2.33.0",
+    "modifiedVersion": "2.33.0-mrw.5",
+    "license": "Apache-2.0",
+    "sourcePatch": "patches/docx-core-2.33.0-mrw5.patch",
+    "sourcePatchSha256": "7b162e9b5895e30068d5a832251404f69bc673c9fdea2ad94ce6908994950283",
+    "compiledArtifact": "docx-editor-core-2.33.0-mrw.5.tgz",
+    "compiledSha256": "ed3568c0cc94acd313b744a1de7a941738fd34c65f297c8136483c4db3940dd8",
+    "compiledArtifactAvailability": "requires-approved-separate-release-asset"
+  },
+  "harfbuzzjs": {
+    "npmPackage": "harfbuzzjs",
+    "version": "1.6.1",
+    "npmRegistry": "https://registry.npmjs.org/harfbuzzjs/-/harfbuzzjs-1.6.1.tgz",
+    "sha256": "dec3d3ff4005eff57acf1e2dfa669b06d50259e4c79c68c32ee3a53468b5cb86",
+    "license": "MIT",
+    "use": "source-level rebuilding of modified DOCX Core, not bundled in this source overlay"
+  },
+  "proprietaryRuntime": {
+    "package": "@deepseek-ai/dsh-workbench-assistant",
+    "version": "0.12.0",
+    "file": "deepseek-ai-dsh-workbench-assistant-0.12.0.tgz",
+    "sha256": "d11ce8d3b06a9d40dbdc57f4b195c21dec607bbb2c86039f4c41e58169f8efdc",
+    "sourceIncluded": false,
+    "availability": "requires-approved-separate-release-asset"
+  },
+  "licensePolicy": {
+    "copyrightHolder": "Pengyu Fu",
+    "originalCodeLicense": "MRW-NC-1.0",
+    "originalCodeScope": "LICENSE-SCOPE.md",
+    "commercialUseRequiresWrittenAuthorization": true,
+    "notOSIApprovedOpenSource": true,
+    "thirdPartyLicensesRemainEffective": true,
+    "priorValidMITGrantsPreserved": true
+  },
+  "publication": {
+    "officialReleaseAuthorized": false,
+    "githubSourceOnly": true,
+    "noThirdPartyTarballs": true,
+    "noProprietaryRuntimeArchive": true
+  }
+}

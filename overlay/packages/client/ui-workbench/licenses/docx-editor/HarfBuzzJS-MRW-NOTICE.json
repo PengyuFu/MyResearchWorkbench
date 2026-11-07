@@ -1,0 +1,12 @@
+{
+  "package": "harfbuzzjs",
+  "version": "1.6.1",
+  "archiveSha256": "dec3d3ff4005eff57acf1e2dfa669b06d50259e4c79c68c32ee3a53468b5cb86",
+  "modifications": [
+    "Explicit asynchronous initialize() replaces top-level await; no shaping algorithms changed.",
+    "Lazy WASM URL fallback honors application-supplied bytes under plugin bundling.",
+    "Existing Node module shim imported explicitly.",
+    "Read the script module URL only in Node; browsers use the application-supplied WASM URL without loading Node builtins.",
+    "Start HarfBuzz after the asynchronous font resolver supplies its resources, without speculative prewarming."
+  ]
+}

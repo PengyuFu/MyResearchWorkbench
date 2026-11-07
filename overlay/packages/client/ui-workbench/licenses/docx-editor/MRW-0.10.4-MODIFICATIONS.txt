@@ -1,0 +1,5 @@
+MyResearchWorkbench 0.10.4 local modifications
+Upstream: eigenpal/docx-editor 2.33.0, commit 3cc7bf5d38510940d6e88ffcec4ecff82fd6333e, Apache-2.0.
+The mrw.5 patch exposes existing layout AutoFit through native table property commands and permits clearing fixed row heights. Application glue adds validated command routing and saved-property verification. Upstream rendering/shaping algorithms and the existing licenses remain applicable.
+Corresponding source and pinned build inputs: third_party/docx-editor/patched-source-3cc7bf5-mrw5.tar.gz in the internal source repository.
+No Pro module or system font is distributed.

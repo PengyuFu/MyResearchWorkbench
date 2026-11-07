@@ -1,0 +1,55 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/client/ui-workbench/README.md
+/:
+  en: ec213f89e35d073e
+  zh: e86233ee97f1a8ee
+/writing-and-development-work-views:
+  en: 2f4064036a2ea35b
+  zh: fc0dee764adf4791
+/writing-and-development-work-views/summary:
+  en: 42cbbabdc3c479d0
+  zh: 34cf62b16a2d7497
+/writing-and-development-work-views/table-of-contents:
+  en: 466ae468506497af
+  zh: a452a7834d8fcae2
+/writing-and-development-work-views/layout-and-conversation:
+  en: 5820c17e7e4f4b5b
+  zh: a5500fc13c4dcdcc
+/writing-and-development-work-views/scientific-editing:
+  en: 89be988bb283dad8
+  zh: 7531a78275ee87da
+/writing-and-development-work-views/word-editing:
+  en: fb4a9e6138d55dd5
+  zh: ac1189312cb3b6e4
+/writing-and-development-work-views/review-saving-and-recovery:
+  en: 286b95a62df1df04
+  zh: db0a411f32b72cff
+/writing-and-development-work-views/development:
+  en: 447204e3e7fe1dc6
+  zh: 405d8f0ba44866fd
+/writing-and-development-work-views/validation:
+  en: 4715a832361b474a
+  zh: 3d8886a00174fef9
+/writing-and-development-work-views/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/writing-and-development-work-views/model-experience/explicit-operations-and-context:
+  en: 5f9e3a906e75e3c4
+  zh: d3942530914c13b4
+/writing-and-development-work-views/model-experience/explicit-operations-and-context/what-the-model-sees:
+  en: 9d64b175ba3a4007
+  zh: 27f85775b1c60b77
+/writing-and-development-work-views/model-experience/explicit-operations-and-context/token-effect:
+  en: 0130ad1ac6d22627
+  zh: 648a23a8cd64af66
+/writing-and-development-work-views/model-experience/explicit-operations-and-context/kv-cache-effect:
+  en: cb0d4ba13bbee131
+  zh: 58ccdbf89f62943f
+/writing-and-development-work-views/known-limitations-and-deferred-work:
+  en: 6a6a572e83a7d3f2
+  zh: 00d61548799eb169
+/writing-and-development-work-views/known-limitations-and-deferred-work/dev-note:
+  en: 0a1253c6f7b5e8b9
+  zh: 9f56528562c7c914

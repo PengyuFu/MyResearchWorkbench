@@ -1,0 +1,93 @@
+/* Base variables referenced by the token sheets and component CSS but defined
+ * upstream (deepsuite theme/global.css) — supplied here so the composite
+ * --dsw-font-* variables resolve and motion rides the upstream curve. Code
+ * font stack deliberately omits a bare `monospace` tail (Windows CJK falls
+ * back to SimSun otherwise). */
+:root {
+  --dsh-font-family-text-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --dsw-font-family: var(--dsh-font-family-text-default);
+  --dsw-font-family-brand: 'Montserrat', var(--dsh-font-family-text-default);
+  --dsh-font-family-code-default: 'SF Mono', 'JetBrains Mono', 'Fira Code', Consolas,
+    'Liberation Mono', Menlo, Courier, 'PingFang SC', 'Microsoft YaHei';
+  --ds-font-family-code: var(--dsh-font-family-code-default);
+  --ds-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ds-transition-duration: 0.2s;
+  --ds-transition-duration-fast: 0.1s;
+  --ds-transition-duration-slow: 0.3s;
+  --dsw-radius-xs: 4px;
+  --dsw-radius-sm: 8px;
+  --dsw-radius-md: 12px;
+  --dsw-radius-lg: 16px;
+  --dsw-radius-xl: 20px;
+  --dsw-radius-panel: 28px;
+}
+
+/* User font lists (--dsh-font-family-text/-code, written on body by the theme
+ * boot script and ThemePresenter) lead the built-in stacks. An unset list
+ * falls back to the built-in stack itself; the repeated families are inert. */
+body {
+  --dsw-font-family: var(--dsh-font-family-text, var(--dsh-font-family-text-default)), var(--dsh-font-family-text-default);
+  --ds-font-family-code: var(--dsh-font-family-code, var(--dsh-font-family-code-default)), var(--dsh-font-family-code-default);
+  --dsw-alias-settings-card-fill: var(--dsw-alias-bg-layer-2);
+  --dsw-alias-settings-card-stroke: var(--dsw-alias-border-l4);
+}
+
+[data-dsh-automatic-focus]:focus,
+[data-dsh-automatic-focus]:focus:focus-visible {
+  outline: none;
+}
+
+/* Editor-specific colors remain local to the active code surface. */
+:root {
+  --dsw-alias-code-keyword: var(--dsw-alias-link);
+  --dsw-alias-code-string: var(--dsw-alias-state-success-primary);
+  --dsw-alias-code-comment: var(--dsw-alias-label-secondary);
+  --dsw-alias-code-number: var(--dsw-alias-link);
+  --dsw-alias-code-type: var(--dsw-alias-label-primary);
+  --dsw-alias-code-function: var(--dsw-alias-label-primary);
+}
+[data-workbench-code-theme='vscode'] {
+  color-scheme: dark;
+  --dsw-alias-bg-base: #1e1e1e;
+  --dsw-alias-bg-layer-1: #252526;
+  --dsw-alias-bg-layer-2: #2d2d30;
+  --dsw-alias-label-primary: #d4d4d4;
+  --dsw-alias-label-secondary: #b8b8b8;
+  --dsw-alias-label-tertiary: #969696;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-border-l1: #3c3c3c;
+  --dsw-alias-border-l2: #555555;
+  --dsw-alias-interactive-bg-hover: #2a2d2e;
+  --dsw-alias-bg-document-selection: #264f78;
+  --dsw-alias-link: #3794ff;
+  --dsw-alias-code-keyword: #569cd6;
+  --dsw-alias-code-string: #ce9178;
+  --dsw-alias-code-comment: #6a9955;
+  --dsw-alias-code-number: #b5cea8;
+  --dsw-alias-code-type: #4ec9b0;
+  --dsw-alias-code-function: #dcdcaa;
+  color: var(--dsw-alias-label-primary);
+}
+[data-workbench-code-theme='scientific'] {
+  color-scheme: light;
+  --dsw-alias-bg-base: #ffffff;
+  --dsw-alias-bg-layer-1: #f4f5f7;
+  --dsw-alias-bg-layer-2: #eceef1;
+  --dsw-alias-label-primary: #202124;
+  --dsw-alias-label-secondary: #50545b;
+  --dsw-alias-label-tertiary: #656b73;
+  --dsw-alias-label-primary-inverted: #ffffff;
+  --dsw-alias-border-l1: #d7dbe0;
+  --dsw-alias-border-l2: #c3c8cf;
+  --dsw-alias-interactive-bg-hover: #e9edf2;
+  --dsw-alias-bg-document-selection: #c8def7;
+  --dsw-alias-link: #165caa;
+  --dsw-alias-code-keyword: #0000a0;
+  --dsw-alias-code-string: #a020a0;
+  --dsw-alias-code-comment: #237a23;
+  --dsw-alias-code-number: #202124;
+  --dsw-alias-code-type: #005b80;
+  --dsw-alias-code-function: #202124;
+  color: var(--dsw-alias-label-primary);
+}

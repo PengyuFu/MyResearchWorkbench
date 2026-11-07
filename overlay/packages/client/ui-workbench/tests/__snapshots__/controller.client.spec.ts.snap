@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`native Word page lifecycle > opens native pages, reuses a current retained page and regenerates only after an edit > native page identity 1`] = `
+{
+  "pane": "pdf",
+  "path": "paper.docx",
+  "stale": false,
+}
+`;

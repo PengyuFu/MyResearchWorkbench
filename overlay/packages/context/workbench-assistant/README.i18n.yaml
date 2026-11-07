@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/context/workbench-assistant/README.md
+/:
+  en: 0ade86b462451b0e
+  zh: 5b40e87278670413
+/workbench-conversation-and-selected-text-assistant:
+  en: 3694bfe97661fd85
+  zh: ca8b9901fee3fd9a
+/workbench-conversation-and-selected-text-assistant/publicly-documented-capabilities:
+  en: b763e03c6a4ae9c7
+  zh: 3b5a78014cb61342
+/workbench-conversation-and-selected-text-assistant/building-and-licensing:
+  en: 075257159153d9b0
+  zh: 9386f382cc31841a
+/workbench-conversation-and-selected-text-assistant/limitations:
+  en: 00ed8f11c2f63b2d
+  zh: 1acdb45dac1529f0

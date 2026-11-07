@@ -1,0 +1,2 @@
+# Keep the verified DOCX source patch byte exact (contains Emscripten line endings).
+patches/docx-core-2.33.0-mrw5.patch -text -eol

@@ -1,0 +1,16 @@
+.viewer { display: flex; flex-direction: column; flex: 1; min-height: 0; min-width: 0; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 6px 10px; color: var(--dsw-alias-label-secondary); font-size: 12px; line-height: 1.5; }
+.toolbar button { font: inherit; color: var(--dsw-alias-label-primary); border: .5px solid var(--dsw-alias-border-l2); background: var(--dsw-alias-bg-layer-1); border-radius: 5px; padding: 3px 7px; cursor: pointer; }
+.toolbar button:hover { background: var(--dsw-alias-interactive-bg-hover); }
+.toolbar button:focus-visible { outline: 2px solid var(--dsw-alias-link); outline-offset: 2px; }
+.hint { margin-left: auto; font-size: 11px; line-height: 1.5; color: var(--dsw-alias-label-tertiary); }
+.pages { flex: 1; min-height: 0; overflow: auto; padding: 12px; background: var(--dsw-alias-bg-document-preview); }
+.page { position: relative; max-width: none; margin: 0 auto 12px; box-shadow: var(--dsw-elevation-prominent); }
+.target { position: absolute; outline: 2px solid var(--dsw-alias-link); background: var(--dsw-alias-bg-document-selection); pointer-events: none; }
+
+.editRegion { position: absolute; border: 0; padding: 0; background: transparent; cursor: text; }
+.editRegion:not(:disabled):hover, .editRegion:focus-visible { outline: 1px solid var(--dsw-alias-link); outline-offset: -1px; background: var(--dsw-alias-bg-document-selection); }
+.editRegion:disabled { pointer-events: none; }
+.textEdit { position: absolute; z-index: 2; display: flex; flex-direction: column; outline: 2px solid var(--dsw-alias-link); background: var(--dsw-alias-bg-layer-1); box-shadow: var(--dsw-elevation-prominent); }
+.textEdit textarea { box-sizing: border-box; width: 100%; max-height: 60vh; padding: 0; border: 0; outline: 0; resize: vertical; line-height: 1.2; color: var(--dsw-alias-label-primary); background: var(--dsw-alias-bg-layer-1); }
+.textEdit button { position: absolute; left: 0; top: 100%; width: max-content; white-space: nowrap; font: 12px/1.5 sans-serif; color: var(--dsw-alias-link); background: var(--dsw-alias-bg-layer-1); border: 0; padding: 4px 8px; cursor: pointer; }

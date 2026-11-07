@@ -1,0 +1,2 @@
+.failure { margin: 12px; padding: 14px 16px; border: .5px solid var(--dsw-alias-border-l2); border-radius: 8px; color: var(--dsw-alias-label-primary); background: var(--dsw-alias-bg-layer-1); font-size: 13px; line-height: 1.6; }
+.detail { margin: 8px 0 0; color: var(--dsw-alias-label-secondary); font-family: inherit; font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
