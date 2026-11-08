@@ -52,7 +52,7 @@ if ((Get-FileHash -LiteralPath $patch -Algorithm SHA256).Hash.ToLowerInvariant()
 $previousNativeWarningPolicy = $ErrorActionPreference
 try {
     $ErrorActionPreference = 'Continue'
-    & git clone --depth 1 --branch $lock.harness.tag -- $lock.harness.repository $target
+    & git -c http.version=HTTP/1.1 clone --depth 1 --branch $lock.harness.tag -- $lock.harness.repository $target
     $gitExitCode = $LASTEXITCODE
 } finally {
     $ErrorActionPreference = $previousNativeWarningPolicy
