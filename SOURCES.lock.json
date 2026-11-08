@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "source-visible-overlay-binary-not-released",
+  "status": "release-bundle",
   "applicationPackageVersion": "0.12.0",
   "harness": {
     "name": "DeepSeek Harness",
@@ -30,7 +30,7 @@
     "sourcePatchSha256": "7b162e9b5895e30068d5a832251404f69bc673c9fdea2ad94ce6908994950283",
     "compiledArtifact": "docx-editor-core-2.33.0-mrw.5.tgz",
     "compiledSha256": "ed3568c0cc94acd313b744a1de7a941738fd34c65f297c8136483c4db3940dd8",
-    "compiledArtifactAvailability": "requires-approved-separate-release-asset"
+    "compiledArtifactAvailability": "GitHub Release v0.12.0 / MyResearchWorkbench_0.12.0_SourceBuildAssets.zip"
   },
   "harfbuzzjs": {
     "npmPackage": "harfbuzzjs",
@@ -48,7 +48,7 @@
     "file": "deepseek-ai-dsh-workbench-assistant-0.12.0.tgz",
     "sha256": "d11ce8d3b06a9d40dbdc57f4b195c21dec607bbb2c86039f4c41e58169f8efdc",
     "sourceIncluded": false,
-    "availability": "requires-approved-separate-release-asset"
+    "availability": "GitHub Release v0.12.0 / MyResearchWorkbench_0.12.0_SourceBuildAssets.zip"
   },
   "licensePolicy": {
     "copyrightHolder": "Pengyu Fu",
@@ -62,9 +62,15 @@
     "priorValidMITGrantsPreserved": true
   },
   "publication": {
-    "officialReleaseAuthorized": false,
-    "githubSourceOnly": true,
-    "noThirdPartyTarballs": true,
-    "noProprietaryRuntimeArchive": true
+    "releaseTag": "v0.12.0",
+    "releaseUrl": "https://github.com/PengyuFu/MyResearchWorkbench/releases/tag/v0.12.0",
+    "sourceRepositoryContains": "approved source overlay and third-party notices",
+    "binaryAssets": [
+      "MyResearchWorkbench_0.12.0_Windows_x64.zip",
+      "MyResearchWorkbench_0.12.0_SourceBuildAssets.zip",
+      "MyResearchWorkbench_0.12.0_ThirdParty_Source.zip"
+    ],
+    "checksums": "SHA256SUMS.txt",
+    "availabilityRule": "Recipients must use the actual published Release and all matching assets; no availability is claimed before publication."
   }
 }

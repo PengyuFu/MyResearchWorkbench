@@ -1,6 +1,6 @@
 # Third-party license texts, source availability and notice inventory
 
-**Scope:** MyResearchWorkbench 0.12.0 Windows x64 pre-release, incorporating DeepSeek Harness dsh-v0.2.2-rc.1, a modified DOCX Editor Core 2.33.0-mrw.5 and the separately compiled Workbench assistant runtime 0.12.0. The component list must be reconciled against the *actual final installed application*, not assumed from build-time lockfiles.
+**Scope:** MyResearchWorkbench 0.12.0 Windows x64 release materials, incorporating DeepSeek Harness dsh-v0.2.2-rc.1, a modified DOCX Editor Core 2.33.0-mrw.5 and the separately compiled Workbench assistant runtime 0.12.0. The component list must be reconciled against the *actual final installed application*, not assumed from build-time lockfiles.
 
 ## DeepSeek Harness and Workbench public-source overlay
 
@@ -41,11 +41,13 @@
 
 ## Other Windows native packages
 
-The current production runtime also includes `sherpa-onnx-win-x64@1.13.8` (native ONNX Runtime DLLs and `sherpa-onnx` binaries) and `@koromix/koffi-win32-x64@3.1.1`. The initial package-level license inventory identifies Apache-2.0 and MIT respectively; verify their actual native subordinate licenses/NOTICE when constructing the final complete application.
+The runtime includes `sherpa-onnx-win-x64@1.13.8`, whose DLLs contain GPL-covered eSpeak NG, and ONNX Runtime 1.28.2. The original npm Apache-2.0 field does not describe all native code. See [SPEECH_NATIVE_NOTICE.md](SPEECH_NATIVE_NOTICE.md) and the release's `speech-native/` corresponding-source directory. The full original notices are supplied under `THIRD_PARTY_ORIGINALS/Native-Speech/` and `ONNXRuntime-1.28.2-*`.
+
+`@koromix/koffi-win32-x64@3.1.1` uses MIT. Its matching parent `koffi@3.1.1` copyright, node-addon-api and node-api-headers notices are retained in `THIRD_PARTY_ORIGINALS/Koffi-3.1.1-MIT.txt`.
 
 ## Packages with no *root-level* LICENSE file
 
-The source runtime audit identified 21 packages with no separate root-level `LICENSE`, `COPYING` or `NOTICE`. This is an inventory finding, not a legal violation. The packages' exact names, versions, SPDX declarations, repositories, and publication status are recorded in the internal license-coverage matrix. Direct/indirect licenses retained by upstream source repositories and the actual app's aggregate THIRD_PARTY_NOTICES must be considered together. A final recipient package should present sufficient copyright/permission notices for every actually redistributed component.
+The source runtime audit identified 21 packages with no separate root-level `LICENSE`, `COPYING` or `NOTICE`. This is an inventory finding, not a legal violation. The packages' exact names, versions, declarations, repositories and matching notices are recorded in the distributed `THIRD_PARTY_COMPONENT_NOTICE_INDEX.json`. Direct/indirect licenses retained by upstream source repositories and the actual app's aggregate THIRD_PARTY_NOTICES must be considered together. The notice index supplements the notices retained inside the original packages; source headers and nested native licenses remain relevant.
 
 ## Source of this notice
 

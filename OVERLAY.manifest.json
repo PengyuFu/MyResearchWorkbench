@@ -3470,8 +3470,8 @@
                   },
                   {
                       "path":  "scripts/mrw/package-portable.ts",
-                      "sha256":  "f8b6bef270497b0163ab024fd62fb72b587965e3386c5887a2eb3ce174e10096",
-                      "bytes":  16740
+                      "sha256":  "61a9cf88682453ec7e144586580b731d91c6b85c398de5b9193a6f395b5d030b",
+                      "bytes":  16642
                   },
                   {
                       "path":  "scripts/mrw/portable-settings.json",
@@ -3597,6 +3597,16 @@
                       "path":  "website/package.json",
                       "sha256":  "c17b167b6147565ba68c9fddaf19f24785605c646aa6deb6a66b05f0d1593067",
                       "bytes":  625
+                  },
+                  {
+                      "path":  "packages/client/tsdown.client.ts",
+                      "sha256":  "47a8d1d2ec6b175da125aa215146064a43c10c83b20586d2d9225c4cdfc13bc1",
+                      "bytes":  51768
+                  },
+                  {
+                      "path":  "packages/experimental/inspector/scripts/devtools/vite.ts",
+                      "sha256":  "2146e53bc5bb0c54313a3d523844b6f396f7c717c0f64a006037860333c1ea6f",
+                      "bytes":  7908
                   }
               ],
     "fileCount":  719,

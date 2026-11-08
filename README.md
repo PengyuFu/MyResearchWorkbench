@@ -1,37 +1,41 @@
-# MyResearchWorkbench
+# MyResearchWorkbench 0.12.0
 
-A Windows desktop research workbench integrating a conversational AI interface with writing, development, document editing, and personal planning.
+Windows x64 科研桌面工作台，将对话、计划、写作、代码编辑和工作区文件连接起来。
 
-**Source distribution scope:** This repository contains the source-visible MyResearchWorkbench integration overlay, with pinned application package metadata 0.12.0. Repository access does not constitute distribution of a complete Windows application. A complete Windows 0.12.0 binary is not released by this repository.
+## 下载与安装
 
-## Repository layout
+官方发行入口：[v0.12.0 Release](https://github.com/PengyuFu/MyResearchWorkbench/releases/tag/v0.12.0)。以该页面实际列出的附件及校验清单为准；Release 未公开或附件不全时，完整安装资源尚不可用。
 
-- `overlay/` — selected Workbench integration and workspace changes applied to a fixed, upstream DeepSeek Harness source checkout.
-- `patches/docx-core-2.33.0-mrw5.patch` — the full free-Core DOCX Editor source delta relative to the pinned EigenPal upstream, with npm HarfBuzz assets supplied separately.
-- `SOURCES.lock.json` — immutable source commits, local modified package hashes, and declared build requirements.
-- `AI_SETUP.md` — step-by-step instructions suitable for a developer or an AI coding assistant.
-- `assemble.ps1` — a minimal Windows assembly and directory-build entry point. It does not change system proxy settings or install software system-wide.
-- `THIRD_PARTY_COMPONENTS.md` — key upstream ownership and license boundaries.
+| 方式 | 需要取得的文件 | 说明 |
+| --- | --- | --- |
+| A：直接运行 | `MyResearchWorkbench_0.12.0_Windows_x64.zip`、`SHA256SUMS.txt` | 推荐普通用户使用；校验、完整解压、启动 EXE，无需安装开发用 Node.js 或 Python。见 [Windows 安装说明](README_WINDOWS.md)。 |
+| B：源码组装构建 | 本仓库 `v0.12.0` 标签、`MyResearchWorkbench_0.12.0_SourceBuildAssets.zip`、`SHA256SUMS.txt` | 需要 Windows x64、Git、Node.js 24 和 Corepack；运行 [assemble.ps1](assemble.ps1)。详见 [AI_SETUP.md](AI_SETUP.md)。 |
+| 第三方对应源码 | `MyResearchWorkbench_0.12.0_ThirdParty_Source.zip` | 与 Windows 包在同一 Release 提供，包含 libvips、LGPL/MPL 依赖源码、固定构建脚本和替换说明；运行程序无需先编译它。 |
 
-The complete DeepSeek Harness repository, third-party source archives, Node.js, Python, Electron, Microsoft Office/WPS, and proprietary runtime source code are **not** checked into this overlay.
+GitHub 自动生成的 “Source code (zip)” 是本仓库源码覆盖层，并非 Windows 程序，也不包含源码构建资产包。
 
-## Build prerequisites
+## 首次使用与更新
 
-Windows x64, Git, Node.js 24 with Corepack (which runs pinned pnpm `11.28.5`), and access to the official upstream sources. Building the currently pinned complete workbench also requires two approved local release inputs:
+启动后选择自己的工作区，按需要配置模型服务/API。API、TeX、原生 Word/WPS 等外部服务或软件按具体功能使用；各自安装、授权和费用独立。已有的本地编辑、文件和计划功能不要求模型 API 先配置完成。
 
-1. The SHA-256-pinned `@docx-editor.dev/core` `2.33.0-mrw.5` package.
-2. The SHA-256-pinned compiled `@deepseek-ai/dsh-workbench-assistant` runtime `0.12.0`.
+0.12.0 使用手动更新。工作区文档与用户 profile 应保留在程序目录之外。跨版本自动迁移由后续版本实现，0.12.0 不承诺已具备这一迁移能力；升级前按 [Windows 安装说明](README_WINDOWS.md) 备份并保留原 profile。
 
-The compiled assets and the accompanying proprietary-runtime EULA are not part of this source repository. Once the Windows release is authorized, the matching official GitHub Release must offer a separate `MyResearchWorkbench_0.12.0_SourceBuildAssets.zip` containing both approved archives and `LICENSE_PRIVATE_RUNTIME_0.12.0.zh-CN.txt`. **No public download URLs are currently specified**, and a complete build cannot be assembled without these approved assets. See `AI_SETUP.md` and `SOURCES.lock.json`.
+0.12.0 的功能包括计划板、写作板、开发板及其 PDF 预览/阅读能力；独立 PDF 板和后续文献功能属于后续版本。
 
-## License / 授权
+## 源码与编译资源
 
-**Pengyu Fu 原创 Workbench 代码：免费学习、教学、非商业科研和非商业使用；商业使用须事先获得 Pengyu Fu 的书面授权。** 适用范围见 [LICENSE-SCOPE.md](LICENSE-SCOPE.md)；完整条款见 [LICENSE](LICENSE)（MRW-NC-1.0）。这是 *source-available*（源码可见）的非商业许可，不能称为 OSI 定义的开源许可证。
+- `overlay/`：批准公开的 Workbench 源码和固定 Harness 上游文件的修改。
+- `OVERLAY.manifest.json`：覆盖层逐文件 SHA-256；`.gitattributes` 固定相关文本 LF，适用于 Windows 常见 Git 换行配置。
+- `SOURCES.lock.json`：上游提交、工具版本和资产哈希。
+- `patches/docx-core-2.33.0-mrw5.patch`：免费 DOCX Core 的完整修改。
+- `LICENSES/`：第三方原始通知、对应源码入口及组件映射。
 
-**第三方依原许可证**：DeepSeek Harness 和上游文件的 MIT 许可文本已原样保留于 [THIRD_PARTY_LICENSES/DeepSeek-Harness-MIT.txt](THIRD_PARTY_LICENSES/DeepSeek-Harness-MIT.txt)；DOCX Editor Core 是 Apache-2.0，Pro/Editor API 不在发行范围；其他第三方继续使用各自原许可证。对旧版本已经合法授予的 MIT 权利不作追溯撤销。单独编译的专有 Workbench 执行核心仍按其独立许可授权，不随本仓库发布源码。
+源码构建资产包提供 `docx-editor-core-2.33.0-mrw.5.tgz`、`deepseek-ai-dsh-workbench-assistant-0.12.0.tgz` 和专有运行 EULA。两份 TGZ 均有固定来源与哈希；专有运行模块以编译形式提供，其内部源码不在公开仓库中。
 
-已整理的第三方原始许可证、NOTICE 与 MPL/LGPL 源码取得说明位于 [`LICENSES/`](LICENSES/)。`assemble.ps1` 构建完成后会将这些公开材料与原创许可范围说明复制到程序旁的 `licenses/`。尚未签发的专有运行模块 EULA 不包含在源码仓库中；完整 Windows 程序与受控编译资源的对外分发另行审核。
+## 授权
 
-The compiled runtime is JavaScript and may be inspected by recipients. Packaging must not be presented as reverse-engineering protection.
+**Pengyu Fu 原创部分允许免费学习、教学、科研和非商业使用；未经 Pengyu Fu 事先书面许可，不得商业利用。** 范围见 [LICENSE-SCOPE.md](LICENSE-SCOPE.md)，条款见 [LICENSE](LICENSE)。MRW-NC-1.0 是源码可见的非商业许可，不属于 OSI 开源许可。
 
-No service API credentials or personal documents are supplied. User changes in Word or other editors remain subject to the application's normal confirmation and save behavior.
+第三方组件依原始 MIT、Apache、LGPL、MPL 等许可证授权，第三方本身允许的使用、修改、再分发与商用权利保持有效；旧版已有效授予的 MIT 权利不追溯撤销。完整程序中的专有原创执行模块依随包 EULA 授权。用户自己的论文、数据和代码不因使用本软件而改变权属。
+
+授权联系：fpy19941225@163.com。发布包不包含用户 API Key、账号配置或研究文件。

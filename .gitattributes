@@ -1,7 +1,11 @@
 # Keep the verified DOCX source patch byte exact (contains Emscripten line endings).
 overlay/** text eol=lf
+/OVERLAY.manifest.json text eol=lf
 patches/docx-core-2.33.0-mrw5.patch -text -eol
 
 # Preserve binary Word resources without line-ending conversion.
 overlay/packages/workspace/workbench-word/worker/blank.docx -text -eol
 overlay/packages/workspace/workbench-word/worker/harfbuzz.wasm -text -eol
+
+# Keep preserved upstream notices byte-exact for their SHA-256 index on Windows.
+LICENSES/** -text -eol

@@ -270,8 +270,7 @@ async function main(): Promise<void> {
     throw new Error('mrw package: MRW_PORTABLE_VERIFICATION must be unset or workbench')
   }
   process.env.MRW_PORTABLE_PACKAGE = '1'
-  process.env.ELECTRON_MIRROR ??= 'https://cdn.npmmirror.com/binaries/electron/'
-  process.env.ELECTRON_BUILDER_BINARIES_MIRROR ??= 'https://cdn.npmmirror.com/binaries/electron-builder-binaries/'
+  // Keep the upstream official download defaults; callers may supply their own network settings.
   seedPrimaryRuntimeCache()
   const invocation = parseDesktopPackageInvocation([TARGET, '--unsigned', '--dir'])
   const environment = loadPortableEnvironment(process.env)

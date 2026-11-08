@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "productVersion": "0.12.0",
+  "scope": "Supplement for 21 components previously flagged for missing package-root LICENSE; existing package and native notices remain applicable.",
+  "components": [
+    {
+      "name": "@aws-sdk/credential-provider-http",
+      "version": "3.972.84",
+      "license": "Apache-2.0",
+      "author": {
+        "url": "https://aws.amazon.com/sdk-for-javascript/",
+        "name": "AWS SDK for JavaScript Team"
+      },
+      "versionEvidence": "https://registry.npmjs.org/%40aws-sdk%2Fcredential-provider-http/3.972.84",
+      "repository": {
+        "url": "git+https://github.com/aws/aws-sdk-js-v3.git",
+        "type": "git",
+        "directory": "packages-internal/credential-provider-http"
+      },
+      "notice": "THIRD_PARTY_ORIGINALS/AWS-SDK-Apache-2.0.txt",
+      "noticeSha256": "edea91454b811f127fbdea3d86f378f6719bd372ed440abf82b232f6fca06c3d",
+      "noticeSource": "https://github.com/aws/aws-sdk-js-v3/blob/main/LICENSE",
+      "note": "Exact final runtime version verified against the official npm registry. Upstream Apache-2.0 notice text and package source headers retained. This replaces the previous candidate's patch-version record.",
+      "registryIntegrity": "sha512-6xFe7tGPZedfak01TLUxuExU2Xhqw0VtoVvcS/+1OLjPB8If5vulTpCaR0TKTA/J6sAhTOjZHb6+4R1e1KRMKg==",
+      "registryTarball": "https://registry.npmjs.org/@aws-sdk/credential-provider-http/-/credential-provider-http-3.972.84.tgz"
+    },
+    {
+      "name": "@aws-sdk/credential-provider-login",
+      "version": "3.972.89",
+      "license": "Apache-2.0",
+      "author": {
+        "url": "https://aws.amazon.com/sdk-for-javascript/",
+        "name": "AWS SDK for JavaScript Team"
+      },
+      "versionEvidence": "https://registry.npmjs.org/%40aws-sdk%2Fcredential-provider-login/3.972.89",
+      "repository": {
+        "url": "git+https://github.com/aws/aws-sdk-js-v3.git",
+        "type": "git",
+        "directory": "packages-internal/credential-provider-login"
+      },
+      "notice": "THIRD_PARTY_ORIGINALS/AWS-SDK-Apache-2.0.txt",
+      "noticeSha256": "edea91454b811f127fbdea3d86f378f6719bd372ed440abf82b232f6fca06c3d",
+      "noticeSource": "https://github.com/aws/aws-sdk-js-v3/blob/main/LICENSE",
+      "note": "Exact final runtime version verified against the official npm registry. Upstream Apache-2.0 notice text and package source headers retained. This replaces the previous candidate's patch-version record.",
+      "registryIntegrity": "sha512-5kcIZkMMs6eYvU6psqZkmeWsS3EGES53S6xUJFCC6eoJak3BQCCaF8yLU1bN6LTAOr2a9RWw+m1XBGen7Jcq+Q==",
+      "registryTarball": "https://registry.npmjs.org/@aws-sdk/credential-provider-login/-/credential-provider-login-3.972.89.tgz"
+    },
+    {
+      "name": "@aws-sdk/nested-clients",
+      "version": "3.998.1",
+      "license": "Apache-2.0",
+      "author": {
+        "url": "https://aws.amazon.com/sdk-for-javascript/",
+        "name": "AWS SDK for JavaScript Team"
+      },
+      "versionEvidence": "https://registry.npmjs.org/%40aws-sdk%2Fnested-clients/3.998.1",
+      "repository": {
+        "url": "git+https://github.com/aws/aws-sdk-js-v3.git",
+        "type": "git",
+        "directory": "packages/nested-clients"
+      },
+      "notice": "THIRD_PARTY_ORIGINALS/AWS-SDK-Apache-2.0.txt",
+      "noticeSha256": "edea91454b811f127fbdea3d86f378f6719bd372ed440abf82b232f6fca06c3d",
+      "noticeSource": "https://github.com/aws/aws-sdk-js-v3/blob/main/LICENSE",
+      "note": "Exact final runtime version verified against the official npm registry. Upstream Apache-2.0 notice text and package source headers retained. This replaces the previous candidate's patch-version record.",
+      "registryIntegrity": "sha512-KPw5W6LN3waUskfDCRXRcyBEHAev5PVlMOjMq74OIivFYbgPvq39QeFege7IOFPncO425/AQK0qxdfaoeGejYQ==",
+      "registryTarball": "https://registry.npmjs.org/@aws-sdk/nested-clients/-/nested-clients-3.998.1.tgz"
+    },
+    {
+      "name": "@earendil-works/pi-ai",
+      "version": "1.3.0",
+      "license": "MIT",
+      "author": {
+        "name": "Mario Zechner"
+      },
+      "versionEvidence": "https://registry.npmjs.org/%40earendil-works%2Fpi-ai/1.3.0",
+      "repository": {
+        "url": "git+https://github.com/earendil-works/pi.git",
+        "type": "git",
+        "directory": "packages/ai"
+      },
+      "archiveSha256": "5343e1639bf343bdc3344df3ad6c31c05a50b68bad07ac6bce10890d4b6b8a61",
+      "notice": "THIRD_PARTY_ORIGINALS/Pi-1.3.0-MIT.txt",
+      "noticeSha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48",
+      "noticeSource": "https://github.com/earendil-works/pi/blob/71023aec1546d6d677a65669c5665c0927ce0dd0/LICENSE",
+      "note": "License declaration verified against the exact npm version; upstream notice text retained."
+    },
+    {
+      "name": "@earendil-works/pi-telemetry",
+      "version": "1.3.0",
+      "license": "MIT",
+      "author": {
+        "name": "Mario Zechner"
+      },
+      "versionEvidence": "https://registry.npmjs.org/%40earendil-works%2Fpi-telemetry/1.3.0",
+      "repository": {
+        "url": "git+https://github.com/earendil-works/pi.git",
+        "type": "git",
+        "directory": "packages/telemetry"
+      },
+      "archiveSha256": "e90ea04e17e491ad8cbe5fd609909322fb251cf01abc5770e6bb93d3fc2453de",
+      "notice": "THIRD_PARTY_ORIGINALS/Pi-1.3.0-MIT.txt",
+      "noticeSha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48",
+      "noticeSource": "https://github.com/earendil-works/pi/blob/71023aec1546d6d677a65669c5665c0927ce0dd0/LICENSE",
+      "note": "License declaration verified against the exact npm version; upstream notice text retained."
+    },
+    {
+      "name": "@koromix/koffi-win32-x64",
+      "version": "3.1.1",
+      "license": "MIT",
+      "author": {
+        "url": "https://koromix.dev/",
+        "name": "Niels Martignène",
+        "email": "niels.martignene@protonmail.com"
+      },
+      "versionEvidence": "https://registry.npmjs.org/%40koromix%2Fkoffi-win32-x64/3.1.1",
+      "repository": {
+        "url": "git+https://github.com/Koromix/koffi.git",
+        "type": "git"
+      },
+      "notice": "THIRD_PARTY_ORIGINALS/Koffi-3.1.1-MIT.txt",
+      "noticeSha256": "22bcbbbacd739b026a8dc484f62a31484ce4c4e31f3408b60b29b4e41d62b290",
+      "note": "Uses the license retained by its matching parent koffi@3.1.1 package, not the older copyright year from the repository default branch."
+    },
+    {
+      "name": "@xterm/addon-serialize",
+      "version": "0.14.0",
+      "license": "MIT",
+      "author": {
+        "url": "https://xtermjs.org/",
+        "name": "The xterm.js authors"
+      },
+      "versionEvidence": "https://registry.npmjs.org/%40xterm%2Faddon-serialize/0.14.0",
+      "repository": {
+        "url": "git+https://github.com/xtermjs/xterm.js.git#master",
+        "type": "git"
+      },
+      "gitHead": "f447274f430fd22513f6adbf9862d19524471c04",
+      "archiveSha256": "f9a290923dc9c6178446e3fc082c29812a7096a1664fd7bf904022c141c5bbfb",
+      "notice": "THIRD_PARTY_ORIGINALS/Xterm-6.0.0-MIT.txt",
+      "noticeSha256": "b569f629d00f2626a8100df2a1798210535621e42164dfd426a6fe5aac7b0ccd",
+      "noticeSource": "https://github.com/xtermjs/xterm.js/blob/f447274f430fd22513f6adbf9862d19524471c04/LICENSE",
+      "note": "License declaration verified against the exact npm version; upstream notice text retained."
+    },
+    {
+      "name": "@xterm/headless",
+      "version": "6.0.0",
+      "license": "MIT",
+      "versionEvidence": "https://registry.npmjs.org/%40xterm%2Fheadless/6.0.0",
+      "repository": {
+        "url": "git+https://github.com/xtermjs/xterm.js.git",
+        "type": "git"
+      },
+      "gitHead": "f447274f430fd22513f6adbf9862d19524471c04",
+      "archiveSha256": "07e4970b1674e7ef6cbd57c8c17746eaadcd41aa7df5b33695fd649e6ec4d78a",
+      "notice": "THIRD_PARTY_ORIGINALS/Xterm-6.0.0-MIT.txt",
+      "noticeSha256": "b569f629d00f2626a8100df2a1798210535621e42164dfd426a6fe5aac7b0ccd",
+      "noticeSource": "https://github.com/xtermjs/xterm.js/blob/f447274f430fd22513f6adbf9862d19524471c04/LICENSE",
+      "note": "License declaration verified against the exact npm version; upstream notice text retained."
+    },
+    {
+      "name": "brotli",
+      "version": "1.3.3",
+      "license": "MIT",
+      "author": {
+        "name": "Devon Govett",
+        "email": "devongovett@gmail.com"
+      },
+      "versionEvidence": "https://registry.npmjs.org/brotli/1.3.3",
+      "repository": {
+        "url": "git+https://github.com/devongovett/brotli.js.git",
+        "type": "git"
+      },
+      "gitHead": "e36051345f6d27a56e5f39ea70d2f789b8574046",
+      "archiveSha256": "3c7c260f6263df95fee49a9119e9fd21227d628b6c9d99080a75edfd9e2bdb24",
+      "notice": "THIRD_PARTY_ORIGINALS/Brotli-DFA-MIT-DECLARATIONS.txt",
+      "noticeSha256": "9fb293401bfdd2112412a3146c14dad21aadba0e4c9f834f09f6046b0f1fa696",
+      "noticeSource": "https://registry.npmjs.org/",
+      "note": "Package and fixed-revision README declare MIT; upstream release lacks a standalone license text. Preserve author attribution and all Apache-2.0 Google source headers separately. Standard MIT terms are supplied as a labeled supplement."
+    },
+    {
+      "name": "data-uri-to-buffer",
+      "version": "4.0.1",
+      "license": "MIT",
+      "author": {
+        "url": "http://n8.io/",
+        "name": "Nathan Rajlich",
+        "email": "nathan@tootallnate.net"
+      },
+      "versionEvidence": "https://registry.npmjs.org/data-uri-to-buffer/4.0.1",
+      "repository": {
+        "url": "git://github.com/TooTallNate/node-data-uri-to-buffer.git",
+        "type": "git"
+      },
+      "gitHead": "85cd8c854aefbf1bb636789d80364cfac8ea1583",
+      "archiveSha256": "a5742b1b775d0b29fb562ff7e12f7ca19874e1c47322087b47a79230791642a1",
+      "notice": "THIRD_PARTY_ORIGINALS/Data-Uri-To-Buffer-4.0.1-MIT.txt",
+      "noticeSha256": "3072ef4a004c4f92b37eae61cdc3e27225c0a7d2f5e144700e40b9c5a5a7a9b9",
+      "noticeSource": "https://github.com/TooTallNate/node-data-uri-to-buffer/blob/85cd8c854aefbf1bb636789d80364cfac8ea1583/README.md",
+      "note": "License declaration verified against the exact npm version; upstream notice text retained."
+    },
+    {
+      "name": "dfa",
+      "version": "1.2.0",
+      "license": "MIT",
+      "author": {
+        "name": "Devon Govett",
+        "email": "devongovett@gmail.com"
+      },
+      "versionEvidence": "https://registry.npmjs.org/dfa/1.2.0",
+      "repository": {
+        "url": "git+ssh://git@github.com/devongovett/dfa.git",
+        "type": "git"
+      },
+      "gitHead": "3f5e603e5082caedabefefdf53e8a6ca3111e966",
+      "archiveSha256": "d781eb3a307ab6aa2d97028f695b17dbeadf6fd27788c333b1fb96d18d2a23ad",
+      "notice": "THIRD_PARTY_ORIGINALS/Brotli-DFA-MIT-DECLARATIONS.txt",
+      "noticeSha256": "9fb293401bfdd2112412a3146c14dad21aadba0e4c9f834f09f6046b0f1fa696",
+      "noticeSource": "https://registry.npmjs.org/",
+      "note": "Fixed-revision README and npm package declare MIT; author attribution and standard terms are supplied as a labeled supplement because the upstream release has no standalone license file."
+    },
+    {
+      "name": "fontkit",
+      "version": "2.0.4",
+      "license": "MIT",
+      "author": {
+        "name": "Devon Govett",
+        "email": "devongovett@gmail.com"
+      },
+      "versionEvidence": "https://registry.npmjs.org/fontkit/2.0.4",
+      "repository": {
+        "url": "git://github.com/foliojs/fontkit.git",
+        "type": "git"
+      },
+      "gitHead": "fbf3b9ef21eebd219eb73e666faed573af0fba09",
+      "archiveSha256": "f686a9515af33fce16ab4bffe50570728197e53165068548c6f75a1793797a08",
+      "notice": "THIRD_PARTY_ORIGINALS/Fontkit-MIT.txt",
+      "noticeSha256": "cf22b8198f0886a8d4626121579114f23141070e1fceab02ab3c1c361e163440",
+      "noticeSource": "https://github.com/foliojs/fontkit/blob/master/LICENSE",
+      "note": "Version 2.0.4 and its fixed-revision README declare MIT; full copyright/license text is retained from the official repository LICENSE, blob 34d142021809672bcbbd880ec9c8957d9c474dd2."
+    },
+    {
+      "name": "proxy-agent-negotiate",
+      "version": "1.1.0",
+      "license": "MIT",
+      "author": {
+        "url": "http://n8.io/",
+        "name": "Nathan Rajlich",
+        "email": "nathan@tootallnate.net"
+      },
+      "versionEvidence": "https://registry.npmjs.org/proxy-agent-negotiate/1.1.0",
+      "repository": {
+        "url": "git+https://github.com/TooTallNate/proxy-agents.git",
+        "type": "git",
+        "directory": "packages/negotiate"
+      },
+      "archiveSha256": "6eec23d5d381a8b0ffafe91c19876d3a052e463618695981a7529f3a8bca1997",
+      "notice": "THIRD_PARTY_ORIGINALS/Proxy-Agents-MIT.txt",
+      "noticeSha256": "8d8c55319c7729d57be811c747452636688d54f19701ee0752b6b15ad3771d9a",
+      "noticeSource": "https://github.com/TooTallNate/proxy-agents/blob/proxy-agent-negotiate@1.1.0/packages/proxy-agent/LICENSE",
+      "note": "MIT declaration and author verified at release tag proxy-agent-negotiate@1.1.0; the same upstream monorepo release preserves the full Nathan Rajlich MIT text under packages/proxy-agent/LICENSE."
+    },
+    {
+      "name": "saxes",
+      "version": "6.0.0",
+      "license": "ISC",
+      "author": {
+        "name": "Louis-Dominique Dubeau",
+        "email": "ldd@lddubeau.com"
+      },
+      "versionEvidence": "https://registry.npmjs.org/saxes/6.0.0",
+      "repository": {
+        "url": "git+https://github.com/lddubeau/saxes.git",
+        "type": "git"
+      },
+      "gitHead": "211fa0ebec9b628affc09219199639887174bfc3",
+      "archiveSha256": "1cdf52fbbe1ccbd175c365d2b8e63f46e590e74aff23fa6a44a6ec51522e96db",
+      "notice": "THIRD_PARTY_ORIGINALS/Saxes-6.0.0-ISC.txt",
+      "noticeSha256": "0fac2374380621b22e6b50451057721a9c52935b02d16d106a9f04897f061d0e",
+      "noticeSource": "https://github.com/lddubeau/saxes/blob/211fa0ebec9b628affc09219199639887174bfc3/LICENSE",
+      "note": "License declaration verified against the exact npm version; upstream notice text retained."
+    },
+    {
+      "name": "sherpa-onnx-node",
+      "version": "1.13.8",
+      "license": "Apache-2.0 original Sherpa files; GPL-3.0-or-later eSpeak-containing native combination; constituent third-party licenses preserved",
+      "author": {
+        "name": "The next-gen Kaldi team"
+      },
+      "versionEvidence": "https://registry.npmjs.org/sherpa-onnx-node/1.13.8",
+      "repository": {
+        "url": "git+https://github.com/csukuangfj/sherpa-onnx.git",
+        "type": "git"
+      },
+      "gitHead": "11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf",
+      "archiveSha256": "db2a7b8b18d950b6e9ca5c1c919afec33fd3dd2bfef1aade0bea5a9fe7a1f0f1",
+      "notice": "THIRD_PARTY_ORIGINALS/Sherpa-Onnx-1.13.8-Apache-2.0.txt",
+      "noticeSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "noticeSource": "https://github.com/csukuangfj/sherpa-onnx/blob/11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf/LICENSE",
+      "note": "Native binaries and fixed CMake inputs were inspected; the Apache npm field alone does not describe their eSpeak NG GPL dependency. Exact nested notice hashes are in NATIVE_SPEECH_NOTICE_INDEX.json.",
+      "npmDeclaredLicense": "Apache-2.0",
+      "additionalNotices": [
+        "SPEECH_NATIVE_NOTICE.md",
+        "THIRD_PARTY_ORIGINALS/GNU-GPL-3.0.txt",
+        "THIRD_PARTY_ORIGINALS/ONNXRuntime-1.28.2-MIT.txt",
+        "THIRD_PARTY_ORIGINALS/ONNXRuntime-1.28.2-ThirdPartyNotices.txt"
+      ],
+      "correspondingSource": "MyResearchWorkbench_0.12.0_ThirdParty_Source.zip / speech-native"
+    },
+    {
+      "name": "sherpa-onnx-win-x64",
+      "version": "1.13.8",
+      "license": "Apache-2.0 original Sherpa files; GPL-3.0-or-later eSpeak-containing native combination; constituent third-party licenses preserved",
+      "author": {
+        "name": "The next-gen Kaldi team"
+      },
+      "versionEvidence": "https://registry.npmjs.org/sherpa-onnx-win-x64/1.13.8",
+      "repository": {
+        "url": "git+https://github.com/csukuangfj/sherpa-onnx.git",
+        "type": "git"
+      },
+      "gitHead": "11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf",
+      "notice": "THIRD_PARTY_ORIGINALS/Sherpa-Onnx-1.13.8-Apache-2.0.txt",
+      "noticeSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "noticeSource": "https://github.com/csukuangfj/sherpa-onnx/blob/11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf/LICENSE",
+      "note": "Native binaries and fixed CMake inputs were inspected; the Apache npm field alone does not describe their eSpeak NG GPL dependency. Exact nested notice hashes are in NATIVE_SPEECH_NOTICE_INDEX.json.",
+      "npmDeclaredLicense": "Apache-2.0",
+      "additionalNotices": [
+        "SPEECH_NATIVE_NOTICE.md",
+        "THIRD_PARTY_ORIGINALS/GNU-GPL-3.0.txt",
+        "THIRD_PARTY_ORIGINALS/ONNXRuntime-1.28.2-MIT.txt",
+        "THIRD_PARTY_ORIGINALS/ONNXRuntime-1.28.2-ThirdPartyNotices.txt"
+      ],
+      "correspondingSource": "MyResearchWorkbench_0.12.0_ThirdParty_Source.zip / speech-native"
+    },
+    {
+      "name": "standardwebhooks",
+      "version": "1.1.1",
+      "license": "MIT",
+      "author": {
+        "name": "Standard Webhooks"
+      },
+      "versionEvidence": "https://registry.npmjs.org/standardwebhooks/1.1.1",
+      "repository": {
+        "url": "git+https://github.com/standard-webhooks/standard-webhooks.git",
+        "type": "git"
+      },
+      "gitHead": "b4d2c14fc5b4ccff3ff271e3b087dff812254c59",
+      "archiveSha256": "d0bc8fec280c9e30ea3cbc876f44fe71d56f443aeca2bd2bdf745718308d4aed",
+      "notice": "THIRD_PARTY_ORIGINALS/StandardWebhooks-MIT.txt",
+      "noticeSha256": "5ec8c7b26b64d881a6706617bed25c049f97f2f35de034c756de8546fd6dbe27",
+      "note": "Exact gitHead libraries/LICENSE, blob 55b14b3a3ce649a2f1b05428dcc9c6db95b37c04. The Apache license of the separate specification does not replace this library MIT license."
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-workbench",
+      "version": "0.12.0",
+      "license": "MRW-NC-1.0 with independent third-party exceptions",
+      "notice": "LICENSE-MYRESEARCHWORKBENCH-NC.md",
+      "note": "Original component license retained in its package and final licenses directory; DOCX/other third-party notices remain independent."
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-inspector",
+      "version": "0.12.0",
+      "license": "MIT",
+      "notice": "THIRD_PARTY_ORIGINALS/DeepSeekHarness-MIT.txt",
+      "note": "Harness upstream MIT plus existing bundled notices."
+    },
+    {
+      "name": "@deepseek-ai/dsh-web-frontend",
+      "version": "0.12.0",
+      "license": "MIT",
+      "notice": "THIRD_PARTY_ORIGINALS/DeepSeekHarness-MIT.txt",
+      "note": "Harness upstream MIT plus existing bundled notices."
+    },
+    {
+      "name": "@deepseek-ai/libreoffice-kit-win32-x64",
+      "version": "0.1.5",
+      "license": "MPL-2.0",
+      "notice": "THIRD_PARTY_ORIGINALS/LibreOfficeKit-MPL-2.0.txt",
+      "note": "Packaged licenses and source metadata are retained; the source companion exposes the same integration sources and notices."
+    }
+  ]
+}

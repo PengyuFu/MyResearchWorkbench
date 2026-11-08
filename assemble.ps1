@@ -129,4 +129,7 @@ foreach ($required in @('THIRD_PARTY_SOURCE_AVAILABILITY.md', 'THIRD_PARTY_ORIGI
         throw ("Required final distribution license file is missing: " + $required)
     }
 }
+foreach ($guide in @('README_WINDOWS.md', 'THIRD_PARTY_SOURCE_ACCESS.md')) {
+    Copy-Item -LiteralPath (Join-Path $source $guide) -Destination (Join-Path $appDir $guide) -Force
+}
 Write-Output ('Built application: ' + $appDir)

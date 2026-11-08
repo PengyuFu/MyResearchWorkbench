@@ -1,0 +1,25 @@
+Package attribution and declared license
+
+brotli 1.3.3 — author Devon Govett; npm package.json and upstream readme.md declare MIT.
+dfa 1.2.0 — author Devon Govett; npm package.json and upstream README.md declare MIT.
+
+These two releases do not carry a standalone LICENSE text. The declarations and author attribution above are preserved, with the standard MIT terms reproduced below. This notice is an attribution supplement, not a new grant from MyResearchWorkbench.
+The Apache-2.0 Google source headers in brotli/dec remain applicable separately; see AWS-SDK-Apache-2.0.txt for the Apache terms and the retained package source headers (Copyright 2013 Google Inc.).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

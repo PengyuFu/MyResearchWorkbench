@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "productVersion": "0.12.0",
+  "sourceCompanion": "MyResearchWorkbench_0.12.0_ThirdParty_Source.zip",
+  "notices": [
+    {
+      "archive": "eigen.tar.gz",
+      "archivePath": "eigen-5.0.1/COPYING.APACHE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/eigen-5.0.1/COPYING.APACHE",
+      "bytes": 11362,
+      "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7"
+    },
+    {
+      "archive": "eigen.tar.gz",
+      "archivePath": "eigen-5.0.1/COPYING.BSD",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/eigen-5.0.1/COPYING.BSD",
+      "bytes": 1517,
+      "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb"
+    },
+    {
+      "archive": "eigen.tar.gz",
+      "archivePath": "eigen-5.0.1/COPYING.MINPACK",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/eigen-5.0.1/COPYING.MINPACK",
+      "bytes": 2193,
+      "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0"
+    },
+    {
+      "archive": "eigen.tar.gz",
+      "archivePath": "eigen-5.0.1/COPYING.MPL2",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/eigen-5.0.1/COPYING.MPL2",
+      "bytes": 16727,
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "archive": "eigen.tar.gz",
+      "archivePath": "eigen-5.0.1/COPYING.README",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/eigen-5.0.1/COPYING.README",
+      "bytes": 264,
+      "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644"
+    },
+    {
+      "archive": "eigen.tar.gz",
+      "archivePath": "eigen-5.0.1/LICENSE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/eigen-5.0.1/LICENSE",
+      "bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "archive": "espeak-ng-for-piper.zip",
+      "archivePath": "espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "archive": "espeak-ng-for-piper.zip",
+      "archivePath": "espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING.APACHE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING.APACHE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "archive": "espeak-ng-for-piper.zip",
+      "archivePath": "espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING.BSD2",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING.BSD2",
+      "bytes": 1244,
+      "sha256": "a8b0c1c7d7af6c0415c068be8cf373799d1a42b0707b79dc4ccfcaf593cd902d"
+    },
+    {
+      "archive": "espeak-ng-for-piper.zip",
+      "archivePath": "espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING.UCD",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/COPYING.UCD",
+      "bytes": 2788,
+      "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7"
+    },
+    {
+      "archive": "espeak-ng-for-piper.zip",
+      "archivePath": "espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/src/ucd-tools/COPYING",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/src/ucd-tools/COPYING",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "archive": "espeak-ng-for-piper.zip",
+      "archivePath": "espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/src/ucd-tools/COPYING.UCD",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/espeak-ng-ed530aa113046142eb5115cf2fc9157854d0ffe1/src/ucd-tools/COPYING.UCD",
+      "bytes": 2788,
+      "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7"
+    },
+    {
+      "archive": "hclust-cpp.tar.gz",
+      "archivePath": "hclust-cpp-2026-02-25/LICENSE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/hclust-cpp-2026-02-25/LICENSE",
+      "bytes": 1483,
+      "sha256": "e361d842da1d290351860ad6dcce2673a1e42e4f873a3ae1ff4eb92c6adaa882"
+    },
+    {
+      "archive": "json.tar.gz",
+      "archivePath": "json-3.12.0/LICENSE.MIT",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/json-3.12.0/LICENSE.MIT",
+      "bytes": 1076,
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "archive": "kaldi-decoder.tar.gz",
+      "archivePath": "kaldi-decoder-0.3.0/LICENSE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/kaldi-decoder-0.3.0/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "archive": "kaldi-native-fbank.tar.gz",
+      "archivePath": "kaldi-native-fbank-1.22.3/LICENSE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/kaldi-native-fbank-1.22.3/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "archive": "kaldifst.tar.gz",
+      "archivePath": "kaldifst-1.8.0/LICENSE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/kaldifst-1.8.0/LICENSE",
+      "bytes": 11728,
+      "sha256": "a682d6efd1ee5dee08a8e405c233c2c198ea70ae0718129daa83ab58cfe31c5d"
+    },
+    {
+      "archive": "kissfft.zip",
+      "archivePath": "kissfft-febd4caeed32e33ad8b2e0bb5ea77542c40f18ec/COPYING",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/kissfft-febd4caeed32e33ad8b2e0bb5ea77542c40f18ec/COPYING",
+      "bytes": 246,
+      "sha256": "a2840585f8411be8e6826a31ef15ae65c950bd74a2437a73b013398a934ad0c6"
+    },
+    {
+      "archive": "openfst.tar.gz",
+      "archivePath": "openfst-1.8.5-2026-07-09/COPYING",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/openfst-1.8.5-2026-07-09/COPYING",
+      "bytes": 559,
+      "sha256": "4300529197035fd3452350718a0b8cee984e9412c9932d7f35fcde849fc97a4b"
+    },
+    {
+      "archive": "piper-phonemize.zip",
+      "archivePath": "piper-phonemize-f3ff95afc03640bc1399e113e83361192a2fafb4/LICENSE.md",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/piper-phonemize-f3ff95afc03640bc1399e113e83361192a2fafb4/LICENSE.md",
+      "bytes": 1071,
+      "sha256": "13746d509d74e55ea2265fbef204bb7cdbf84a8315b0207e988326cb54387028"
+    },
+    {
+      "archive": "piper-phonemize.zip",
+      "archivePath": "piper-phonemize-f3ff95afc03640bc1399e113e83361192a2fafb4/licenses/uni-algo/LICENSE.md",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/piper-phonemize-f3ff95afc03640bc1399e113e83361192a2fafb4/licenses/uni-algo/LICENSE.md",
+      "bytes": 2208,
+      "sha256": "c55648b02873556d6ab2de14938998101fda3a0f293337542af9196435def318"
+    },
+    {
+      "archive": "sherpa-onnx-1.13.8-source.tar.gz",
+      "archivePath": "sherpa-onnx-11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf/LICENSE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/sherpa-onnx-11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "archive": "simple-sentencepiece.tar.gz",
+      "archivePath": "simple-sentencepiece-0.7/LICENSE",
+      "notice": "THIRD_PARTY_ORIGINALS/Native-Speech/simple-sentencepiece-0.7/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ]
+}
