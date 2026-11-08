@@ -25,10 +25,10 @@
 
 1. 读取本文件、`SOURCES.lock.json`、`THIRD_PARTY_COMPONENTS.md`。
 2. 检查工具环境。不要修改系统代理或浏览器账号，也不要复制本机 API Key、真实会话或个人研究文件。
-3. 校验两个资产的 SHA-256；不一致立即停止。
-4. 在**新的空目录**中克隆官方 DeepSeek Harness 标签 `dsh-v0.2.2-rc.1`，确认 Git commit 和 tree 都与锁文件一致。
+3. 校验两个编译资产和 EULA 文件的 SHA-256；不一致立即停止。
+4. 选择一个**事先不存在的目标目录**，由脚本克隆官方 DeepSeek Harness 标签 `dsh-v0.2.2-rc.1`，确认 Git commit 和 tree 都与锁文件一致。
 5. 将 `overlay/` 中逐文件校验后的源文件覆盖到上游对应相对位置；把已批准的 DOCX Core tgz 放入 `third_party/docx-editor/`。
-6. 仅在当前进程中设置 `MRW_BUILD_MODE=public` 和 `MRW_PUBLIC_RUNTIME_TGZ`，使用 `corepack pnpm install --frozen-lockfile` 安装依赖，再执行 Windows x64 无签名目录打包；构建成功后自动向成品 `licenses/` 复制仓库 `LICENSES/` 的第三方许可证原文与原创许可范围说明。
+6. 仅在当前进程中设置 `MRW_BUILD_MODE=public` 和 `MRW_PUBLIC_RUNTIME_TGZ`，使用 `corepack pnpm install --frozen-lockfile` 安装依赖，再执行 Windows x64 无签名目录打包；构建成功后自动向成品 `licenses/` 复制仓库 `LICENSES/` 的第三方许可证原文、原创许可范围说明及已核验的专有运行模块 EULA。
 7. 检查构建退出码、`win-unpacked` 中的 EXE、`resources/app.asar`、资源路径及真正的发行后运行时自检。不要把开发态可运行当作已安装验收。
 8. 给出完整的构建结果、未验证项和来源声明；不自动上传 GitHub、生成远端 Release 或发布软件。
 
