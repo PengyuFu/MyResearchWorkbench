@@ -38,7 +38,9 @@
     "npmRegistry": "https://registry.npmjs.org/harfbuzzjs/-/harfbuzzjs-1.6.1.tgz",
     "sha256": "dec3d3ff4005eff57acf1e2dfa669b06d50259e4c79c68c32ee3a53468b5cb86",
     "license": "MIT",
-    "use": "source-level rebuilding of modified DOCX Core, not bundled in this source overlay"
+    "use": "source-level rebuilding of modified DOCX Core; the unmodified WASM resource is bundled for writing-board text shaping",
+    "runtimeResource": "overlay/packages/workspace/workbench-word/worker/harfbuzz.wasm",
+    "runtimeResourceSha256": "37777ced92a2ba10279c33e1dbacf08835ddcacc215b7fcb3131e558dd01ce71"
   },
   "proprietaryRuntime": {
     "package": "@deepseek-ai/dsh-workbench-assistant",
@@ -52,6 +54,8 @@
     "copyrightHolder": "Pengyu Fu",
     "originalCodeLicense": "MRW-NC-1.0",
     "originalCodeScope": "LICENSE-SCOPE.md",
+    "privateRuntimeEulaFile": "LICENSE_PRIVATE_RUNTIME_0.12.0.zh-CN.txt",
+    "privateRuntimeEulaSha256": "005e9919d0093771c438fdf5aeede6f9a294620e0182fbc365087dfc642af1b4",
     "commercialUseRequiresWrittenAuthorization": true,
     "notOSIApprovedOpenSource": true,
     "thirdPartyLicensesRemainEffective": true,

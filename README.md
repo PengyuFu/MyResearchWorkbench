@@ -22,7 +22,7 @@ Windows x64, Git, Node.js 24 with Corepack (which runs pinned pnpm `11.28.5`), a
 1. The SHA-256-pinned `@docx-editor.dev/core` `2.33.0-mrw.5` package.
 2. The SHA-256-pinned compiled `@deepseek-ai/dsh-workbench-assistant` runtime `0.12.0`.
 
-These two assets are not included in this source repository. Only obtain them from a separately authorized distribution channel; **no public download URLs are currently specified**. Without the approved proprietary runtime, a complete build cannot be assembled from this overlay alone. See `AI_SETUP.md` and `SOURCES.lock.json`.
+The compiled assets and the accompanying proprietary-runtime EULA are not part of this source repository. Once the Windows release is authorized, the matching official GitHub Release must offer a separate `MyResearchWorkbench_0.12.0_SourceBuildAssets.zip` containing both approved archives and `LICENSE_PRIVATE_RUNTIME_0.12.0.zh-CN.txt`. **No public download URLs are currently specified**, and a complete build cannot be assembled without these approved assets. See `AI_SETUP.md` and `SOURCES.lock.json`.
 
 ## License / 授权
 

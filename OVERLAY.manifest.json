@@ -409,6 +409,11 @@
                       "bytes":  3041
                   },
                   {
+                      "path":  "packages/bundle/web-app/cordis.patch.yml",
+                      "sha256":  "ec7e6e265add9399daa17ede7fd3ce1880ad497b262b73822b379c2346d8120d",
+                      "bytes":  23723
+                  },
+                  {
                       "path":  "packages/bundle/web-app/package.json",
                       "sha256":  "d927ea72b70dd600c40d3fcc0a4ca67e3afdee5fffa376258c002bdcb4757bf6",
                       "bytes":  10787
@@ -3319,9 +3324,19 @@
                       "bytes":  21757
                   },
                   {
+                      "path":  "packages/workspace/workbench-word/worker/blank.docx",
+                      "sha256":  "ba4fdd8d319be3ea9e3e8505c15e1a20a3950b8d7b9b4d8b7ae795fa3401b3ee",
+                      "bytes":  2370
+                  },
+                  {
                       "path":  "packages/workspace/workbench-word/worker/bridge.py",
                       "sha256":  "1549847b46484ae9687b0b0622a29031dc88bba257398c94e2daf482ff451edd",
                       "bytes":  29237
+                  },
+                  {
+                      "path":  "packages/workspace/workbench-word/worker/harfbuzz.wasm",
+                      "sha256":  "37777ced92a2ba10279c33e1dbacf08835ddcacc215b7fcb3131e558dd01ce71",
+                      "bytes":  426620
                   },
                   {
                       "path":  "packages/workspace/workbench-word/worker/projection.py",
@@ -3584,6 +3599,6 @@
                       "bytes":  625
                   }
               ],
-    "fileCount":  716,
+    "fileCount":  719,
     "licenseChange":  "MRW-NC-1.0 applies to Pengyu Fu original portions; legacy third-party licenses remain"
 }

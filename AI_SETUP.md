@@ -10,17 +10,18 @@
 
 ## 2. 确认所需资源
 
-- Windows x64；已安装 Git、Node.js 24（建议 24.21.0）和 Corepack。通过 `corepack pnpm --version` 核验固定的 **pnpm 11.28.5**，无需单独安装另一个 pnpm 版本。
+- Windows x64；已安装 Git、Node.js 24（建议 24.21.0）和 Corepack。进入源码仓库的 `overlay` 目录运行 `corepack pnpm --version`，核验固定的 **pnpm 11.28.5**，无需单独安装另一个 pnpm 版本。
 - 可访问 `https://github.com/deepseek-ai/deepseek-harness` 和项目使用的 npm/Node/Electron/Python 原始依赖地址。
-- 用户已经通过被授权的单独发行渠道取得两个文件，并保存在同一文件夹：
+- 用户已经通过被授权的单独发行渠道取得 **MyResearchWorkbench 0.12.0 源码构建资产包**，并将以下三个文件解压到同一个目录：
   - `docx-editor-core-2.33.0-mrw.5.tgz`（修改后的免费 Apache-2.0 DOCX Core）。
   - `deepseek-ai-dsh-workbench-assistant-0.12.0.tgz`（编译后的专有 Workbench 运行模块）。
+  - `LICENSE_PRIVATE_RUNTIME_0.12.0.zh-CN.txt`（专有部分许可协议，必须随构建结果保留）。
 
-**当前没有发布或验证这两个资产的公开下载链接。** 如果缺失，暂停完整装配并报告缺少哪个文件。切勿编造下载链接、从不明镜像替代资产，或尝试生成空白的私有运行模块。
+**当前尚未发布或验证这些资产的公开下载链接。** 完整 Windows 发行获批准时，应将构建资产 ZIP 与完整 Windows ZIP、第三方对应源码 ZIP 同时提供于同一官方 GitHub Release。若未获得构建资产 ZIP，暂停完整装配并报告缺项。不要从第三方镜像替代文件或尝试生成空白的专有模块。
 
 ## 3. 建议交给 AI 执行的操作
 
-把本源码仓库与两个已批准资产提供给 AI，要求它：
+把本源码仓库与已批准的源码构建资产包（含两个 `.tgz` 和许可证文件）提供给 AI，要求它：
 
 1. 读取本文件、`SOURCES.lock.json`、`THIRD_PARTY_COMPONENTS.md`。
 2. 检查工具环境。不要修改系统代理或浏览器账号，也不要复制本机 API Key、真实会话或个人研究文件。
