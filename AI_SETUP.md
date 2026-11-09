@@ -14,6 +14,8 @@
 | `deepseek-ai-dsh-workbench-assistant-0.12.0.tgz` | `d11ce8d3b06a9d40dbdc57f4b195c21dec607bbb2c86039f4c41e58169f8efdc` |
 | `LICENSE_PRIVATE_RUNTIME_0.12.0.zh-CN.txt` | `005e9919d0093771c438fdf5aeede6f9a294620e0182fbc365087dfc642af1b4` |
 
+建议使用较短的源码检出路径（例如自己选择的 `D:\MRWSource`），避免 Windows Git 的传统路径长度限制。
+
 源码可使用 Release 的源码 ZIP，或：
 
 ```powershell

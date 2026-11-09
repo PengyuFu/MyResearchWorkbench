@@ -16,7 +16,7 @@ Get-FileHash -Algorithm SHA256 .\MyResearchWorkbench_0.12.0_SourceBuildAssets.zi
 Expand-Archive -LiteralPath .\MyResearchWorkbench_0.12.0_SourceBuildAssets.zip -DestinationPath .\mrw-assets-0.12.0
 ```
 
-Run these commands from a directory you choose. Keep the source checkout, asset folder, and output build directory separate.
+Use a short source checkout path, such as a user-chosen `D:\MRWSource`, to avoid Windows Git's traditional path-length limit. Run these commands from a directory you choose. Keep the source checkout, asset folder, and output build directory separate.
 
 The extracted asset folder must contain:
 
