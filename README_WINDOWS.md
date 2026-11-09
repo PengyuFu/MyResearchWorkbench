@@ -1,5 +1,7 @@
 # MyResearchWorkbench 0.12.0 — Windows x64
 
+[简体中文](#) | [English](README_WINDOWS.en.md)
+
 ## 取得、校验与启动
 
 1. 从 [官方 v0.12.0 Release](https://github.com/PengyuFu/MyResearchWorkbench/releases/tag/v0.12.0) 下载 `MyResearchWorkbench_0.12.0_Windows_x64.zip` 和 `SHA256SUMS.txt`。第三方对应源码 ZIP 同页提供。

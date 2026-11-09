@@ -1,5 +1,7 @@
 # MyResearchWorkbench — 代码授权范围 / License scope
 
+[简体中文](#) | [English](LICENSE-SCOPE.en.md)
+
 This repository contains **source-visible, noncommercial original Workbench code** and independently licensed third-party code. The original Workbench portions are **not OSI open-source software** because their license restricts commercial use.
 
 许可方：**Pengyu Fu**。授权联系邮箱：**fpy19941225@163.com**。适用于 Pengyu Fu 拥有权利的原创部分；**非商业学习、教学与科研免费，未经 Pengyu Fu 事先书面许可不得商业利用**。
@@ -32,7 +34,7 @@ This repository contains **source-visible, noncommercial original Workbench code
 
 ## 2. 不受原创非商业限制覆盖的代码
 
-- **DeepSeek Harness 上游原有文件、其 MIT 代码和独立的上游改进**：MIT；保留上游版权与许可文本 [THIRD_PARTY_LICENSES/DeepSeek-Harness-MIT.txt](THIRD_PARTY_LICENSES/DeepSeek-Harness-MIT.txt)。
+- **DeepSeek Harness 上游原有文件、其 MIT 代码和独立的上游改进**：MIT；保留上游版权与许可文本 [THIRD_PARTY_LICENSES/DeepSeek-Harness-MIT.txt](https://github.com/PengyuFu/MyResearchWorkbench/blob/v0.12.0/THIRD_PARTY_LICENSES/DeepSeek-Harness-MIT.txt)。
 - `overlay/` 中基于 Harness 上游的其他修改文件：对其中已有的 MIT 代码继续适用 MIT；不以“覆盖文件”名称推定所有权或限制其商业使用。若将来需单独授权其中的新增原创片段，应先识别具体贡献。
 - DOCX Editor Core 的原始源码及 `patches/docx-core-2.33.0-mrw5.patch` 中涉及的 EigenPal/第三方部分：遵守 Apache-2.0 及各自许可，须保留 NOTICE 和修改声明。
 - 通过 npm、Python、Electron、LibreOffice、Sharp、CodeMirror、Tiptap、MathLive 等渠道取得的第三方代码、二进制和内容：遵守各自许可证。

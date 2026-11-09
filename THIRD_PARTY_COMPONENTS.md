@@ -1,21 +1,24 @@
-# Third-party components and license boundaries
+# 第三方组件与许可边界
 
-This source overlay is not a substitute for the license and notice files in the corresponding upstream projects or the actual application distribution.
+简体中文 | [English](THIRD_PARTY_COMPONENTS.en.md)
 
-| Component | Pinned source | License / obligation to check | Distribution form |
+本公开覆盖层不能替代各上游项目或实际程序内的 LICENSE/NOTICE。
+
+| 组件 | 固定来源 | 许可与通知 | 提供方式 |
 | --- | --- | --- | --- |
-| DeepSeek Harness | [Official repository](https://github.com/deepseek-ai/deepseek-harness), `dsh-v0.2.2-rc.1` | MIT; retain upstream notices and attribution | Retrieved directly by the builder; source is not copied into this repository |
-| EigenPal DOCX Editor **Core** | [Official repository](https://github.com/eigenpal/docx-editor), commit `3cc7bf5d38510940d6e88ffcec4ecff82fd6333e` | Apache-2.0; preserve source copyright, license, modification notices and applicable NOTICE | Download original source; apply the textual `mrw.5` patch; or install separately approved Core package |
-| HarfBuzzJS | [npm package](https://www.npmjs.com/package/harfbuzzjs), `1.6.1` | MIT; preserve its license and modification statement | Official npm download for patch reproduction; unchanged WASM and license are not included in this repository |
-| Electron / Chromium | Versions recorded in the upstream build and `SOURCES.lock.json` | Electron and Chromium third-party license files as shipped | Downloaded by the upstream packaging process |
-| Tiptap, CodeMirror, MathLive | Exact versions in the overlay dependency lockfile | Keep the original component license and bundled asset notices | Installed through pinned package manifests |
-| LibreOffice Kit (native/Windows) | `@deepseek-ai/libreoffice-kit` and Windows payload, `0.1.5` | MPL-2.0; confirm applicable source/modification availability and notices for redistributed binaries | Original upstream/runtime dependency, subject to release audit |
-| Sharp Windows binary | `@img/sharp-win32-x64` `0.35.5` | Manifest declares Apache-2.0 AND LGPL-3.0-or-later; examine actual binary components and applicable redistribution conditions | Installed by upstream package dependency closure |
-| Standard Webhooks JavaScript `standardwebhooks@1.1.1` | [Official source](https://github.com/standard-webhooks/standard-webhooks/tree/main/libraries/javascript) | MIT for the npm library (`libraries/LICENSE`, copyright Svix); the separate protocol specification identifies Apache-2.0 | Pinned npm dependency; MIT text in `LICENSES/THIRD_PARTY_ORIGINALS/StandardWebhooks-MIT.txt` |
-| Windows Python bridge and Python runtime | Versions pinned in the upstream project | Retain each bundled Python/native package's license and notices | Built from original locked dependencies; local MS Office itself is not bundled |
+| DeepSeek Harness | [官方仓库](https://github.com/deepseek-ai/deepseek-harness)，`dsh-v0.2.2-rc.1` | MIT，保留原版权与归属 | 组装时取得固定官方源码 |
+| EigenPal DOCX Editor Core | [官方仓库](https://github.com/eigenpal/docx-editor)，`3cc7bf5d38510940d6e88ffcec4ecff82fd6333e` | Apache-2.0，保留版权、许可、修改声明及适用 NOTICE | 上游源码加 mrw.5 补丁，或同版本已批准 Core 包；不含 Pro/Editor API |
+| HarfBuzzJS | 官方 npm，1.6.1 | MIT，保留许可及修改声明 | 官方包用于复现补丁；批准的 overlay 也包含随程序使用的 WASM 和许可 |
+| Electron / Chromium / FFmpeg | 固定版本见锁文件及源码包清单 | 保留 Electron、Chromium 和原生依赖原始通知；FFmpeg LGPL 对应材料单独提供 | 上游打包流程获取，源码包提供对应资料 |
+| Tiptap、CodeMirror、MathLive | overlay 锁文件固定版本 | 各自原始许可及资源通知 | 按锁定依赖安装 |
+| LibreOffice Kit | `@deepseek-ai/libreoffice-kit` 与 Windows 载荷 0.1.5 | MPL-2.0，对应源码、修改与通知 | 固定运行依赖，实际随包源码与通知另在配套 ZIP 提供 |
+| Sharp Windows | `@img/sharp-win32-x64@0.35.5` | 清单为 Apache-2.0 AND LGPL-3.0-or-later；按实际原生组件保留相应权利 | 上游依赖闭包；libvips 与静态依赖源码、构建配方及替换说明随包提供 |
+| 原生语音 | Sherpa 1.13.8、eSpeak NG/Piper、ONNX Runtime 1.28.2 等 | 原生组合含 GPL 组件，不能只按 Apache 描述 | 固定源码、构建资料、MIT worker 和原始通知见源码包及许可索引 |
+| Standard Webhooks JavaScript | `standardwebhooks@1.1.1`，[官方来源](https://github.com/standard-webhooks/standard-webhooks/tree/main/libraries/javascript) | npm 库为 MIT（Svix）；独立协议规范标示 Apache-2.0 | 固定 npm 依赖；原文在 `LICENSES/THIRD_PARTY_ORIGINALS/StandardWebhooks-MIT.txt` |
+| Python 与 Windows Python 桥接 | 上游固定版本 | 各 Python/原生包的独立许可与通知 | 锁定依赖；不包含用户本机 Microsoft Office |
 
-The upstream `THIRD_PARTY_NOTICES.md` included under `overlay/` is generated from direct dependencies and other documented runtime members. It must **not** be mistaken for a complete final legal inventory of every transitive or native binary component.
+overlay 中的上游 `THIRD_PARTY_NOTICES.md` 来自其直接依赖及已登记运行成员，不能用作所有传递和原生依赖的完整清单。实际源码和通知获取见 [第三方源码说明](THIRD_PARTY_SOURCE_ACCESS.md) 及 `LICENSES/` 中的组件索引。
 
-**Pengyu Fu's original Workbench contributions are licensed for noncommercial use under MRW-NC-1.0, as specifically scoped in [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md). Commercial use of those original portions requires Pengyu Fu's prior written authorization.** This project-specific source-available license does not alter the MIT, Apache, MPL, LGPL or other rights granted for the third-party portions. A separately distributed compiled execution module is governed by its own formal license and does not convey its private source code. If an earlier version of a particular contribution was validly distributed under MIT, the historical license remains valid for that version.
+**Pengyu Fu 原创部分仅在 [明确范围](LICENSE-SCOPE.md) 内适用 MRW-NC-1.0，允许规定的免费非商业使用；商业利用需事先书面授权。** 第三方 MIT、Apache、MPL、LGPL、GPL 等既有权利保持有效。专有编译执行模块依据独立 EULA，不提供其内部源码。以前具体版本已有效授予的 MIT 权利不追溯取消。
 
-**Complete Windows binary distribution limitation:** Pengyu Fu is the named licensor of the original Workbench portions (see LICENSE). The separately compiled proprietary runtime, actual native binary notices, corresponding-source availability and LGPL/MPL obligations must be cleared for full Windows application distribution. Source repository access alone does not authorize distribution of those restricted binary assets.
+完整程序的专有运行 EULA、原生通知、对应源码及构建/替换资料随本次发行提供。全部适用许可义务仍然有效；仅取得公开源码不意味着获得任意再分发受限专有二进制的授权。

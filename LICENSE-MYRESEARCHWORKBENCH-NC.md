@@ -1,5 +1,7 @@
 # MyResearchWorkbench 原创代码非商业许可协议（MRW-NC-1.0）
 
+[简体中文](#) | [English](LICENSE.en.md)
+
 Copyright (c) 2026 Pengyu Fu. All rights reserved.
 
 **许可方：Pengyu Fu**

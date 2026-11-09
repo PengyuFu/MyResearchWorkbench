@@ -73,7 +73,7 @@ foreach ($entry in $manifest.files) {
     New-Item -ItemType Directory -Path (Split-Path -Parent $outputFile) -Force | Out-Null
     Copy-Item -LiteralPath $inputFile -Destination $outputFile -Force
 }
-foreach ($legalFile in @('LICENSE-MYRESEARCHWORKBENCH-NC.md', 'LICENSE-SCOPE.md')) {
+foreach ($legalFile in @('LICENSE-MYRESEARCHWORKBENCH-NC.md', 'LICENSE.en.md', 'LICENSE-SCOPE.md', 'LICENSE-SCOPE.en.md')) {
     Copy-Item -LiteralPath (Join-Path $source $legalFile) -Destination (Join-Path $target $legalFile) -Force
 }
 Copy-Item -LiteralPath $docx -Destination (Join-Path $target 'third_party/docx-editor')
@@ -120,7 +120,7 @@ if (!(Test-Path -LiteralPath (Join-Path $appDir 'MyResearchWorkbench.exe') -Path
 $licenseDir = Join-Path $appDir 'licenses'
 New-Item -ItemType Directory -Path $licenseDir -Force | Out-Null
 Copy-Item -Path (Join-Path $source 'LICENSES/*') -Destination $licenseDir -Recurse -Force
-foreach ($license in @('LICENSE-MYRESEARCHWORKBENCH-NC.md', 'LICENSE-SCOPE.md')) {
+foreach ($license in @('LICENSE-MYRESEARCHWORKBENCH-NC.md', 'LICENSE.en.md', 'LICENSE-SCOPE.md', 'LICENSE-SCOPE.en.md')) {
     Copy-Item -LiteralPath (Join-Path $source $license) -Destination (Join-Path $licenseDir $license) -Force
 }
 Copy-Item -LiteralPath $eula -Destination (Join-Path $licenseDir $lock.licensePolicy.privateRuntimeEulaFile) -Force
@@ -129,7 +129,7 @@ foreach ($required in @('THIRD_PARTY_SOURCE_AVAILABILITY.md', 'THIRD_PARTY_ORIGI
         throw ("Required final distribution license file is missing: " + $required)
     }
 }
-foreach ($guide in @('README_WINDOWS.md', 'THIRD_PARTY_SOURCE_ACCESS.md')) {
+foreach ($guide in @('README_WINDOWS.md', 'README_WINDOWS.en.md', 'THIRD_PARTY_SOURCE_ACCESS.md', 'THIRD_PARTY_SOURCE_ACCESS.en.md')) {
     Copy-Item -LiteralPath (Join-Path $source $guide) -Destination (Join-Path $appDir $guide) -Force
 }
 Write-Output ('Built application: ' + $appDir)
